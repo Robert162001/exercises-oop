@@ -1,0 +1,7 @@
+1. Write a method that prints numbers from 1 to 100:
+    - if the number is multiple of 3 - print monday
+    - if the number multiple of 5 - print tuesday
+    - if the number - print wednesday
+    - else, print the number
+
+    Write unit tests for the method to test all possible scenarios
