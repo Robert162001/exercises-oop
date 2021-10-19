@@ -5,3 +5,11 @@
     - else, print the number
 
     Write unit tests for the method to test all possible scenarios
+    
+2. Create a method that accepts a string as a parameter and will return the number of consonants. Write unit tests for the method
+Documentation: https://www.javatpoint.com/java-string
+
+3. Write a method that will accept two strings as parameters. It will return a string that contains the vowels from both strings in reverse order separated by
+dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will return "a-u-i".
+
+4. 
