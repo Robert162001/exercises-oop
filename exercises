@@ -11,5 +11,6 @@ Documentation: https://www.javatpoint.com/java-string
 
 3. Write a method that will accept two strings as parameters. It will return a string that contains the vowels from both strings in reverse order separated by
 dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will return "a-u-i".
+Documentation: https://www.javatpoint.com/java-string
 
 4. 
