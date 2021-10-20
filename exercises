@@ -3,9 +3,8 @@
     - if the number multiple of 5 - print tuesday
     - if the number - print wednesday
     - else, print the number
+   Write unit tests for the method to test all possible scenarios
 
-    Write unit tests for the method to test all possible scenarios
-    
 2. Create a method that accepts a string as a parameter and will return the number of consonants. Write unit tests for the method
 Documentation: https://www.javatpoint.com/java-string
 
@@ -14,7 +13,7 @@ dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will 
 Documentation: https://www.javatpoint.com/java-string
 
 4. Create the following OOP structure:
-An interface named ElectronicDevice that has the following methods:
+An interface named ElectronicDevice that has the following Methods:
 
 - getPowerSource()-> returns an enum with one of three: accumulator, batteries, electric_plug
 - setPowerSource(PowerSources ps) -> returns void; sets the powersource
@@ -26,7 +25,7 @@ An interface named ElectronicDevice that has the following methods:
 - width (type double)
 - screenResolution (type String)
 
-Functionalities (methods)
+Functionalities (Methods)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts diagonal as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on TV"
@@ -38,7 +37,7 @@ Functionalities (methods)
 - brand (type String)
 - operatingSystem (type String)
 
-Functionalities (methods)
+Functionalities (Methods)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts brand as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on Phone"
