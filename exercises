@@ -6,6 +6,11 @@
    Write unit tests for the method to test all possible scenarios
 
 2. Create a method that accepts a string as a parameter and will return the number of consonants. Write unit tests for the method
+    - check string contains just vowels
+    - check string contains an empty word
+    - check string contains uppercase
+    - check string contains special characters
+    - check string contains spaces
 Documentation: https://www.javatpoint.com/java-string
 
 3. Write a method that will accept two strings as parameters. It will return a string that contains the vowels from both strings in reverse order separated by
@@ -13,7 +18,7 @@ dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will 
 Documentation: https://www.javatpoint.com/java-string
 
 4. Create the following OOP structure:
-An interface named ElectronicDevice that has the following Methods:
+An interface named ElectronicDevice that has the following StringExercises:
 
 - getPowerSource()-> returns an enum with one of three: accumulator, batteries, electric_plug
 - setPowerSource(PowerSources ps) -> returns void; sets the powersource
@@ -25,7 +30,7 @@ An interface named ElectronicDevice that has the following Methods:
 - width (type double)
 - screenResolution (type String)
 
-Functionalities (Methods)
+Functionalities (StringExercises)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts diagonal as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on TV"
@@ -37,7 +42,7 @@ Functionalities (Methods)
 - brand (type String)
 - operatingSystem (type String)
 
-Functionalities (Methods)
+Functionalities (StringExercises)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts brand as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on Phone"
