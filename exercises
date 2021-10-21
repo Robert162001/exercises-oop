@@ -1,0 +1,51 @@
+1. Write a method that prints numbers from 1 to 100:
+    - if the number is multiple of 3 - print monday
+    - if the number multiple of 5 - print tuesday
+    - if the number - print wednesday
+    - else, print the number
+   Write unit tests for the method to test all possible scenarios
+
+2. Create a method that accepts a string as a parameter and will return the number of consonants. Write unit tests for the method
+    - check string contains just vowels
+    - check string contains an empty word
+    - check string contains uppercase
+    - check string contains special characters
+    - check string contains spaces
+Documentation: https://www.javatpoint.com/java-string
+
+3. Write a method that will accept two strings as parameters. It will return a string that contains the vowels from both strings in reverse order separated by
+dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will return "a-u-i".
+Documentation: https://www.javatpoint.com/java-string
+
+4. Create the following OOP structure:
+An interface named ElectronicDevice that has the following StringExercises:
+
+- getPowerSource()-> returns an enum with one of three: accumulator, batteries, electric_plug
+- setPowerSource(PowerSources ps) -> returns void; sets the powersource
+- isPortable() -> returns a boolean
+
+1 Tvs class that implements ElectronicDevice that has the following properties:
+- diagonal (type positive int)
+- length (type double)
+- width (type double)
+- screenResolution (type String)
+
+Functionalities (StringExercises)
+- Create 2 constructors for the class (one that accepts no arguments and one that accepts diagonal as argument)
+- create setters and getters for each of the properties
+- switchOn() -> returns a String that says "Switch on TV"
+
+2 Instances of the Tvs class named Samsung and Lg
+
+1 Mobile class that implements ElectronicDevice that has the following properties:
+- diagonal (type positive int)
+- brand (type String)
+- operatingSystem (type String)
+
+Functionalities (StringExercises)
+- Create 2 constructors for the class (one that accepts no arguments and one that accepts brand as argument)
+- create setters and getters for each of the properties
+- switchOn() -> returns a String that says "Switch on Phone"
+2 Instances of the Mobile class named Samsung and iPhone
+
+Documentation: https://www.javatpoint.com/java-oops-concepts
