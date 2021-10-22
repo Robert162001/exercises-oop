@@ -13,7 +13,7 @@ public class StringExercises {
         return String.valueOf(returnValue);
     }
 
-    //Problem 2
+    // Problem 2 - solution 2
     public int consonantsProblem(String word) {
         int consonants = 0;
         word = word.toLowerCase();
@@ -29,6 +29,21 @@ public class StringExercises {
             }
         }
         return consonants;
+    }
+
+    public String getConsonants(String word) {
+        return word.replaceAll("[aeiouy]", "");
+    }
+
+    public String removeSpecialCharacters(String word) {
+        return word.replaceAll("[\\s~!@#$%^&*()_+{}\\[\\]:;,.<>/?-]", "");
+    }
+
+    public int countConsonants(String numberOfConsonants) {
+        numberOfConsonants = numberOfConsonants.toLowerCase();
+        String wordWithoutSpecialChar = removeSpecialCharacters(numberOfConsonants);
+        String onlyConsonants = getConsonants(wordWithoutSpecialChar);
+        return onlyConsonants.length();
     }
 
 }
