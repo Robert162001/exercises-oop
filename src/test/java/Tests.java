@@ -42,49 +42,49 @@ public class Tests {
     //Problem 2 Tests
     @Test
     public void nrOfConsonants() {
-        int actual = stringExercises.consonantsProblem("home");
+        int actual = stringExercises.countConsonants("home");
         int expected = 2;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void justConsonants() {
-        int actual = stringExercises.consonantsProblem("zxcvb");
+        int actual = stringExercises.countConsonants("zxcvb");
         int expected = 5;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void justVowels() {
-        int actual = stringExercises.consonantsProblem("aeiou");
+        int actual = stringExercises.countConsonants("aeiouy");
         int expected = 0;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void emptyWord() {
-        int actual = stringExercises.consonantsProblem("");
+        int actual = stringExercises.countConsonants("");
         int expected = 0;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void uppercaseWord() {
-        int actual = stringExercises.consonantsProblem("RobERt");
+        int actual = stringExercises.countConsonants("RobERt");
         int expected = 4;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void specialCharacters() {
-        int actual = stringExercises.consonantsProblem("Bo$$");
+        int actual = stringExercises.countConsonants("Bo$$");
         int expected = 1;
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void stringWithSpaces() {
-        int actual = stringExercises.consonantsProblem("r r");
+        int actual = stringExercises.countConsonants("r r");
         int expected = 2;
         Assert.assertEquals(expected, actual);
     }
