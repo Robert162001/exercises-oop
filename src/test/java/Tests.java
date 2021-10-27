@@ -10,7 +10,7 @@ public class Tests {
         stringExercises = new StringExercises();
     }
 
-    //Problem 1 Tests
+    // Problem 1 Tests
     @Test
     public void testForMonday() {
         String expected = "Monday";
@@ -39,7 +39,7 @@ public class Tests {
         Assert.assertEquals(expected, actual);
     }
 
-    //Problem 2 Tests
+    // Problem 2 Tests
     @Test
     public void nrOfConsonants() {
         int actual = stringExercises.countConsonants("home");
@@ -86,6 +86,35 @@ public class Tests {
     public void stringWithSpaces() {
         int actual = stringExercises.countConsonants("r r");
         int expected = 2;
+        Assert.assertEquals(expected, actual);
+    }
+
+    // Problem 3 Tests
+    @Test
+    public void reverseWordTest(){
+        String actual=stringExercises.reverseWord("home");
+        String expected="emoh";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void addDashTest(){
+        String actual=stringExercises.addDash("water");
+        String expected="w-a-t-e-r";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getVowelsTest(){
+        String actual=stringExercises.getVowels("window");
+        String expected="io";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void reverseVowelsTest() {
+        String actual = stringExercises.reverseVowels("MILk", "sUgar");
+        String expected = "a-u-i";
         Assert.assertEquals(expected, actual);
     }
 
