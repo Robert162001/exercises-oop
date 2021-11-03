@@ -18,7 +18,7 @@ dashes. The method will ignore cases (E.g.: reverseVowels("MILk", "sUgar") will 
 Documentation: https://www.javatpoint.com/java-string
 
 4. Create the following OOP structure:
-An interface named ElectronicDevice that has the following StringExercises:
+An interface named ElectronicDevice that has the following methods:
 
 - getPowerSource()-> returns an enum with one of three: accumulator, batteries, electric_plug
 - setPowerSource(PowerSources ps) -> returns void; sets the powersource
@@ -30,7 +30,7 @@ An interface named ElectronicDevice that has the following StringExercises:
 - width (type double)
 - screenResolution (type String)
 
-Functionalities (StringExercises)
+Functionalities (methods)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts diagonal as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on TV"
@@ -42,7 +42,7 @@ Functionalities (StringExercises)
 - brand (type String)
 - operatingSystem (type String)
 
-Functionalities (StringExercises)
+Functionalities (methods)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts brand as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on Phone"
