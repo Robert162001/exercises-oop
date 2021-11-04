@@ -2,6 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import po.StringExercises;
+import po.StringUtils;
 
 public class Tests {
     private StringExercises stringExercises;
@@ -93,28 +94,35 @@ public class Tests {
     // Problem 3 Tests
     @Test
     public void reverseWordTest() {
-        String actual = stringExercises.reverseWord("home");
+        String actual = StringUtils.reverseWord("home");
         String expected = "emoh";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void addDashTest() {
-        String actual = stringExercises.addDash("water");
+        String actual = StringUtils.addDash("water");
         String expected = "w-a-t-e-r";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void getVowelsTest() {
-        String actual = stringExercises.getVowels("window");
+        String actual = StringUtils.getVowels("window");
         String expected = "io";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
+    public void emptyWordTest() {
+        String actual = stringExercises.reverseVowels("", "");
+        String expected = "";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
     public void reverseVowelsTest() {
-        String actual = stringExercises.reverseVowels("MIlk", "sUgar");
+        String actual = stringExercises.reverseVowels("MIlk", "$Ugar");
         String expected = "a-u-i";
         Assert.assertEquals(expected, actual);
     }

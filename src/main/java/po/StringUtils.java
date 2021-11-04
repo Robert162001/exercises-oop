@@ -2,15 +2,15 @@ package po;
 
 public class StringUtils {
 
-    public String getVowels(String word) {
+    public static String getVowels(String word) {
         return word.replaceAll("([^aeiouyAEIOUY0-9\\W]+)", "");
     }
 
-    public String addDash(String word) {
+    public static String addDash(String word) {
         return word.replaceAll(".(?=.)", "$0-");
     }
 
-    public String reverseWord(String word) {
+    public static String reverseWord(String word) {
         String[] words = word.split("\\s");
         String reverseWord = "";
         for (String w : words) {
@@ -21,11 +21,11 @@ public class StringUtils {
         return reverseWord.trim();
     }
 
-    public String getConsonants(String word) {
+    public static String getConsonants(String word) {
         return word.replaceAll("[aeiouy]", "");
     }
 
-    public String removeSpecialCharacters(String word) {
+    public static String removeSpecialCharacters(String word) {
         return word.replaceAll("[\\s~!@#$%^&*()_+{}\\[\\]:;,.<>/?-]", "");
     }
 

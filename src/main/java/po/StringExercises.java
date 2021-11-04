@@ -1,6 +1,8 @@
 package po;
 
-public class StringExercises extends StringUtils {
+import static po.StringUtils.*;
+
+public class StringExercises {
 
     // Problem 1
     public String fizzBuzzProblem(int parameter) {
@@ -25,15 +27,12 @@ public class StringExercises extends StringUtils {
 
     // Problem 3
     public String reverseVowels(String word1, String word2) {
-        word1 = word1.toLowerCase();
-        word2 = word2.toLowerCase();
-        String reverseWord1 = reverseWord(word1);
-        String reverseWord2 = reverseWord(word2);
-        String getVowelsWord1 = getVowels(reverseWord1);
-        String getVowelsWord2 = getVowels(reverseWord2);
-        String addDashWord1 = addDash(getVowelsWord1);
-        String addDashWord2 = addDash(getVowelsWord2);
-        return addDashWord2 + "-" + addDashWord1;
+        String word = word1 + word2;
+        word = word.toLowerCase();
+        String reverseWord = reverseWord(word);
+        String wordWithoutSpecialCh = removeSpecialCharacters(reverseWord);
+        String getVowelsWord = getVowels(wordWithoutSpecialCh);
+        return addDash(getVowelsWord);
     }
 
 }
