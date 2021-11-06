@@ -1,6 +1,6 @@
 package po;
 
-import static po.StringUtils.*;
+import static po.MyStringUtils.*;
 
 public class StringExercises {
 
@@ -35,4 +35,34 @@ public class StringExercises {
         return addDash(getVowelsWord);
     }
 
+    /**
+     * Concatenates two words and returns their vowels in reversed order with a special character between them.
+     *
+     * @param firstWord  - mandatory
+     * @param secondWord - mandatory
+     * @return - vowels in reverse order with a special character between them
+     */
+    public String reverseVowelsAlternativeSolution(String firstWord, String secondWord, String specialCharacter) {
+        return addSpecialCharBetweenLetters(getVowels(reverseWord(removeSpecialCharacters(firstWord.toLowerCase()
+                + secondWord.toLowerCase()))), specialCharacter);
+    }
+
+    /**
+     * Concatenates two words and returns their vowels in reversed order with a special character between them.
+     *
+     * @param specialCharacter - mandatory
+     * @param words            - a number of strings
+     * @return - vowels in reverse order with a special character between them
+     */
+
+    public String reverseVowelsAlternativeSolution(String specialCharacter, String... words) {
+        StringBuilder processedString = new StringBuilder();
+
+        for (String value : words) {
+            processedString.append(value.toLowerCase());
+        }
+
+        return addSpecialCharBetweenLetters(getVowels(reverseWord(removeSpecialCharactersAndDigits(
+                processedString.toString()))), specialCharacter);
+    }
 }

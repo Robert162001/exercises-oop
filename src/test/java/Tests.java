@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import po.StringExercises;
-import po.StringUtils;
+import po.MyStringUtils;
 
 public class Tests {
     private StringExercises stringExercises;
@@ -94,21 +94,21 @@ public class Tests {
     // Problem 3 Tests
     @Test
     public void reverseWordTest() {
-        String actual = StringUtils.reverseWord("home");
+        String actual = MyStringUtils.reverseWord("home");
         String expected = "emoh";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void addDashTest() {
-        String actual = StringUtils.addDash("water");
+        String actual = MyStringUtils.addDash("water");
         String expected = "w-a-t-e-r";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void getVowelsTest() {
-        String actual = StringUtils.getVowels("window");
+        String actual = MyStringUtils.getVowels("window");
         String expected = "io";
         Assert.assertEquals(expected, actual);
     }
@@ -125,5 +125,21 @@ public class Tests {
         String actual = stringExercises.reverseVowels("MIlk", "$Ugar");
         String expected = "a-u-i";
         Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void reverseVowelsAlternativeSolutionTest() {
+        String specialCharacter = "-";
+        String actual = stringExercises.reverseVowelsAlternativeSolution("MIlk", "$Ugar", specialCharacter);
+        String expected = "a-u-i";
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void reverseVowelsAlternativeSolutionStringParamsTest() {
+        String specialCharacter = "-";
+        String actual = stringExercises.reverseVowelsAlternativeSolution(specialCharacter, "MIlk", "$Ugar", "H0n3y");
+        String expected = "y-a-u-i";
+        Assert.assertEquals(actual, expected);
     }
 }
