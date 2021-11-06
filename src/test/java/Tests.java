@@ -1,6 +1,8 @@
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import po.StringExercises;
+import po.StringUtils;
 
 public class Tests {
     private StringExercises stringExercises;
@@ -10,7 +12,7 @@ public class Tests {
         stringExercises = new StringExercises();
     }
 
-    //Problem 1 Tests
+    // Problem 1 Tests
     @Test
     public void testForMonday() {
         String expected = "Monday";
@@ -39,7 +41,7 @@ public class Tests {
         Assert.assertEquals(expected, actual);
     }
 
-    //Problem 2 Tests
+    // Problem 2 Tests
     @Test
     public void nrOfConsonants() {
         int actual = stringExercises.countConsonants("home");
@@ -89,4 +91,39 @@ public class Tests {
         Assert.assertEquals(expected, actual);
     }
 
+    // Problem 3 Tests
+    @Test
+    public void reverseWordTest() {
+        String actual = StringUtils.reverseWord("home");
+        String expected = "emoh";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void addDashTest() {
+        String actual = StringUtils.addDash("water");
+        String expected = "w-a-t-e-r";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getVowelsTest() {
+        String actual = StringUtils.getVowels("window");
+        String expected = "io";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void emptyWordTest() {
+        String actual = stringExercises.reverseVowels("", "");
+        String expected = "";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void reverseVowelsTest() {
+        String actual = stringExercises.reverseVowels("MIlk", "$Ugar");
+        String expected = "a-u-i";
+        Assert.assertEquals(expected, actual);
+    }
 }
