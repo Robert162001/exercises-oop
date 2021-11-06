@@ -47,6 +47,14 @@ public class StringExercises {
                 + secondWord.toLowerCase()))), specialCharacter);
     }
 
+    /**
+     * Concatenates two words and returns their vowels in reversed order with a special character between them.
+     *
+     * @param specialCharacter - mandatory
+     * @param words            - a number of strings
+     * @return - vowels in reverse order with a special character between them
+     */
+
     public String reverseVowelsAlternativeSolution(String specialCharacter, String... words) {
         StringBuilder processedString = new StringBuilder();
 
