@@ -1,4 +1,4 @@
-package po;
+package stringexercises;
 
 public class MyStringUtils {
 
