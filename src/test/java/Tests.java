@@ -1,8 +1,8 @@
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import po.StringExercises;
-import po.MyStringUtils;
+import stringexercises.StringExercises;
+import stringexercises.MyStringUtils;
 
 public class Tests {
     private StringExercises stringExercises;

@@ -34,8 +34,8 @@ Functionalities (methods)
 - Create 2 constructors for the class (one that accepts no arguments and one that accepts diagonal as argument)
 - create setters and getters for each of the properties
 - switchOn() -> returns a String that says "Switch on TV"
-
 2 Instances of the Tvs class named Samsung and Lg
+
 
 1 Mobile class that implements ElectronicDevice that has the following properties:
 - diagonal (type positive int)

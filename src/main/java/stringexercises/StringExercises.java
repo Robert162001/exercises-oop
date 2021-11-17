@@ -1,6 +1,6 @@
-package po;
+package stringexercises;
 
-import static po.MyStringUtils.*;
+import static stringexercises.MyStringUtils.*;
 
 public class StringExercises {
 
