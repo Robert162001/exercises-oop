@@ -1,4 +1,4 @@
-package po;
+package po.edevices;
 
 public class Mobile implements ElectronicDevice {
 
