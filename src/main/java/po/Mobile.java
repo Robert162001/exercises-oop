@@ -35,7 +35,11 @@ public class Mobile implements ElectronicDevice {
         this.brand = mobileBrand;
     }
 
-    Mobile constructor = new Mobile(brand);
+    Mobile(int mobileDiagonal, String mobileBrand, String mobileOperatingSystem) {
+        this.diagonal = mobileDiagonal;
+        this.brand = mobileBrand;
+        this.operatingSystem = mobileOperatingSystem;
+    }
 
     public void setDiagonal(int diagonal) {
         this.diagonal = diagonal;
@@ -63,6 +67,25 @@ public class Mobile implements ElectronicDevice {
 
     public String switchOn() {
         return "Switch on Phone";
+    }
+
+    public static void main(String[] args) {
+
+        Mobile samsung = new Mobile();
+        Mobile iPhone = new Mobile("11 Pro");
+        Mobile huawei = new Mobile(15, "P30", "HarmonyOS");
+
+        samsung.setDiagonal(16);
+        samsung.setBrand("S10+");
+        samsung.setOperatingSystem("Android");
+
+        iPhone.setDiagonal(14);
+        iPhone.setOperatingSystem("iOS");
+
+        System.out.println("Samsung: " + samsung.getDiagonal() + " " + samsung.getBrand() + " " + samsung.getOperatingSystem());
+        System.out.println("iPhone: " + iPhone.getDiagonal() + " " + iPhone.getBrand() + " " + iPhone.getOperatingSystem());
+        System.out.println("Huawei: " + huawei.getDiagonal() + " " + huawei.getBrand() + " " + huawei.getOperatingSystem());
+
     }
 
 }

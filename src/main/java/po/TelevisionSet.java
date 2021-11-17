@@ -36,7 +36,12 @@ public class TelevisionSet implements ElectronicDevice {
         this.diagonal = tvDiagonal;
     }
 
-    TelevisionSet constructor = new TelevisionSet(diagonal);
+    TelevisionSet(int tvDiagonal, double tvLength, double tvWidth, String tvScreenResolution) {
+        this.diagonal = tvDiagonal;
+        this.length = tvLength;
+        this.width = tvWidth;
+        this.screenResolution = tvScreenResolution;
+    }
 
     public void setDiagonal(int diagonal) {
         this.diagonal = diagonal;
@@ -74,4 +79,24 @@ public class TelevisionSet implements ElectronicDevice {
         return "Switch on TV";
     }
 
+    public static void main(String[] args) {
+
+        TelevisionSet samsung = new TelevisionSet();
+        TelevisionSet lg = new TelevisionSet(100);
+        TelevisionSet panasonic = new TelevisionSet(110, 90, 70, "HD");
+
+        samsung.setDiagonal(120);
+        samsung.setLength(100);
+        samsung.setWidth(60);
+        samsung.setScreenResolution("HD+");
+
+        lg.setLength(70);
+        lg.setWidth(50);
+        lg.setScreenResolution("HD");
+
+        System.out.println("Samsung: " + samsung.getDiagonal() + " " + samsung.getLength() + " " + samsung.getWidth() + " " + samsung.getScreenResolution());
+        System.out.println("LG: " + lg.getDiagonal() + " " + lg.getLength() + " " + lg.getWidth() + " " + lg.getScreenResolution());
+        System.out.println("Panasonic: " + panasonic.getDiagonal() + " " + panasonic.getLength() + " " + panasonic.getWidth() + " " + panasonic.getScreenResolution());
+
+    }
 }
