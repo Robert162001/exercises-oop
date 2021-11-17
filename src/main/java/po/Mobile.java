@@ -6,7 +6,7 @@ public class Mobile implements ElectronicDevice {
     private String brand;
     private String operatingSystem;
     private String powerSource;
-    private boolean isPortable;
+    private boolean isPortable = true;
 
     @Override
     public String getPowerSource() {
